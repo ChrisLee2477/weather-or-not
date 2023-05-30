@@ -12,7 +12,7 @@ function getApi(event){
     event.preventDefault();
 var userCity = document.getElementById("input2").value
 
-var locationUrl ="http://api.openweathermap.org/geo/1.0/direct?q=" + userCity + "&limit=5&appid=" + key;
+var locationUrl ="https://api.openweathermap.org/geo/1.0/direct?q=" + userCity + "&limit=5&appid=" + key;
 
 fetch(locationUrl)
     .then(function(resp){
